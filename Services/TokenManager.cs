@@ -23,7 +23,7 @@ namespace ApiIntegrationBoilerplate.Services
 
         public string GetToken()
         {
-            if (string.IsNullOrEmpty(_config))
+            if (string.IsNullOrEmpty(_config.Token))
             {
                 SetBasicToken();
             }
